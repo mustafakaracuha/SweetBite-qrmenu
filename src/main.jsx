@@ -1,10 +1,8 @@
-// index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import QRScanner from './pages/Scanner/QRScanner';
 import QRMenu from './pages/Menu/QRMenu';
-
 import './index.css';
 
 const App = () => {
@@ -18,4 +16,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+createRoot(document.getElementById('root')).render(<App />);
