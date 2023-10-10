@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import QRCode from "react-qr-code";
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 function QRScanner() {
   const [value, setValue] = useState("http://localhost:5173/menu");
@@ -22,15 +21,6 @@ function QRScanner() {
         QR kodu okutarak menümüze ulaşabilirsiniz
       </h2>
       <h2 className="text-xl font-thin mt-2 text-white">Afiyet Olsun 😊</h2>
-
-      <div className="absolute bottom-0 mb-5 flex mt-8">
-        <a href="instagram-link" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-3xl text-white mx-3 cursor-pointer" />
-        </a>
-        <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp className="text-3xl text-white mx-3 cursor-pointer" />
-        </a>
-      </div>
     </div>
   );
 }
