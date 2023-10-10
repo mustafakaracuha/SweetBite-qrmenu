@@ -18,11 +18,13 @@ function QRScanner() {
           viewBox={`0 0 256 256`}
         />
       </div>
-      <h2 className="text-lg font-thin mt-8 text-white">QR kodu okutarak menümüze ulaşabilirsiniz</h2>
+      <h2 className="text-lg font-thin mt-8 text-white">
+        QR kodu okutarak menümüze ulaşabilirsiniz
+      </h2>
       <h2 className="text-xl font-thin mt-2 text-white">Afiyet Olsun 😊</h2>
 
       <div className="absolute bottom-0 mb-5 flex mt-8">
-      <a href="instagram-link" target="_blank" rel="noopener noreferrer">
+        <a href="instagram-link" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
         </a>
         <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">

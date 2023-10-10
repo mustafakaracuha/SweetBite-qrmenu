@@ -1,6 +1,9 @@
 import React from 'react';
 import menuItems from '../../data/menuItems';
 
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+
+
 const QrMenu = () => {
   const renderMenuItems = () => {
     const categories = ['PİLAV', 'MAKARNA', ""];
@@ -31,8 +34,16 @@ const QrMenu = () => {
       <h1 className="text-4xl font-[500] mb-8 text-start text-white pl-2">MENÜ</h1>
 
       {renderMenuItems()}
+      <div className='flex absolute bottom-0 mb-5'>
+      <a href="instagram-link" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
+        </a>
+        <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="text-3xl text-white mx-4 cursor-pointer" />
+        </a>
+      </div>
 
-      <div className="w-52 h-auto absolute bottom-0 right-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
+      <div className="w-50 h-auto absolute bottom-0 right-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
       <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">Pi LOVE YOU</p>
       <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">0507 829 88 58</p>
       </div>

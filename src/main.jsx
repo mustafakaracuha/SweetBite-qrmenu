@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 
 import QRScanner from "./pages/Scanner/QRScanner";
-import QrMenu from "./pages/Menu/qrMenu";
+import QrMenu from "./pages/Menu/QRMenu";
 
 import "./index.css";
 
