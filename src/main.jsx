@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import QRScanner from './pages/Scanner/QRScanner';
-import QRMenu from './pages/Menu/QRMenu';
+import QRScanner from './components/Scanner/QRScanner';
+import QRMenu from './components/Menu/QRMenu';
 
 import './index.css';
 
