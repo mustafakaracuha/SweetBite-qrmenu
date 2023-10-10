@@ -25,10 +25,10 @@ function QRScanner() {
 
       <div className="absolute bottom-0 mb-5 flex mt-8">
         <a href="instagram-link" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
+          <FaInstagram className="text-3xl text-white mx-3 cursor-pointer" />
         </a>
         <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp className="text-3xl text-white mx-2 cursor-pointer" />
+          <FaWhatsapp className="text-3xl text-white mx-3 cursor-pointer" />
         </a>
       </div>
     </div>
