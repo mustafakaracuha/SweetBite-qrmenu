@@ -18,7 +18,7 @@ const QrMenu = () => {
             .map((menuItem) => (
               <li key={menuItem.id} className="py-1">
                 <div className='flex items-center justify-between'>
-                  <strong className="text-md font-[500] text-white pl-2">{menuItem.name}</strong>
+                  <strong className="text-lg font-[400] text-white pl-2">{menuItem.name}</strong>
                   <p className="text-sm text-black bg-white p-2 rounded-xl font-[600]">{menuItem.price} TL</p>
                 </div>
               </li>
