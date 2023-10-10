@@ -34,7 +34,7 @@ const QrMenu = () => {
   };
 
   return (
-    <div className="max-w-md max-h-screen mx-auto mt-2 p-9">
+    <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-9">
       <h1 className="text-5xl font-[700] mb-2 text-start text-rose-500 pl-2">
         Pi LOVE YOU *
       </h1>
@@ -43,23 +43,20 @@ const QrMenu = () => {
       </h1>
 
       {renderMenuItems()}
-      <div className="flex absolute bottom-0 mb-5">
-        <a href="instagram-link" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
-        </a>
-        <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp className="text-3xl text-white mx-4 cursor-pointer" />
-        </a>
-      </div>
+      <div className='flex mb-5'>
+      <a href="instagram-link" target="_blank" rel="noopener noreferrer">
+        <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
+      </a>
+      <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp className="text-3xl text-white mx-4 cursor-pointer" />
+      </a>
+    </div>
 
-      <div className="absolute bottom-0 right-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
-        <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
-          Pi LOVE YOU
-        </p>
-        <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
-          0507 829 88 58
-        </p>
-      </div>
+    {/* Altta sabit konumlanmış içerik */}
+    <div className="fixed bottom-0 right-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
+      <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">Pi LOVE YOU</p>
+      <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">0507 829 88 58</p>
+    </div>
     </div>
   );
 };
