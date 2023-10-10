@@ -34,7 +34,7 @@ const QrMenu = () => {
   };
 
   return (
-    <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-9">
+    <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-5">
       <h1 className="text-5xl font-[700] mb-2 text-start text-rose-500 pl-2">
         Pi LOVE YOU *
       </h1>
