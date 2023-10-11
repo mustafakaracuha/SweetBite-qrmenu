@@ -53,7 +53,6 @@ const QrMenu = () => {
       </h1>
 
       {renderMenuItems()}
-      <div className="w-full flex items-center">
       <div className="flex">
         <a href="https://www.instagram.com/piloveyou.1" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
@@ -64,14 +63,13 @@ const QrMenu = () => {
       </div>
 
       {/* Altta sabit konumlanmış içerik */}
-      <div className=" ml-auto  p-1 pl-10 text-right bg-rose-500 rounded-l-full">
+      <div className="absolute right-0 bottom-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
         <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
           Pi LOVE YOU
         </p>
         <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
           0507 829 88 58
         </p>
-      </div>
       </div>
     </div>
   );
