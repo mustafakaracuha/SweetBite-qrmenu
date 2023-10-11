@@ -6,9 +6,9 @@ const menuItems = [
   { id: 4, category: "MAKARNA", name: "Köri Soslu Makarna", price: 45 },
   { id: 5, category: "MAKARNA", name: "Kremalı Tavuk Makarna", price: 45 },
 
-  { id: 6, category: "", name: "Mantı", price: 35 },
-  { id: 7, category: "", name: "Mercimek Çorbası", price: 15 },
-  { id: 8, category: "", name: "Patso", price: 20 },
+  { id: 6, category: "DİĞER", name: "Mantı", price: 35 },
+  { id: 7, category: "DİĞER", name: "Mercimek Çorbası", price: 15 },
+  { id: 8, category: "DİĞER", name: "Patso", price: 20 },
 ];
 
 export default menuItems;

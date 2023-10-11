@@ -1,50 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 import menuItems from "../../data/menuItems";
 
 const QrMenu = () => {
-  const renderMenuItems = () => {
-    const categories = ["PİLAV", "MAKARNA", ""];
+  const [categoryVisibility, setCategoryVisibility] = useState({});
 
-    return categories.map((category) => (
-      <div key={category} className="mb-6">
-        <h2 className="text-2xl mb-3 text-rose-500 font-bold rounded-md pl-2">
-          {category}
-        </h2>
-        <div className="w-full h-[4px] mb-2 rounded-full bg-rose-500"></div>
-        <ul>
-          {menuItems
-            .filter((menuItem) => menuItem.category === category)
-            .map((menuItem) => (
-              <li key={menuItem.id} className="py-1">
-                <div className="flex items-center justify-between">
-                  <strong className="text-lg font-normal text-white pl-2">
-                    {menuItem.name}
-                  </strong>
-                  <p className="text-sm text-black bg-white p-2 rounded-xl font-semibold">
-                    {menuItem.price} TL
-                  </p>
-                </div>
-              </li>
-            ))}
-        </ul>
-      </div>
-    ));
+  const toggleCategoryVisibility = (category) => {
+    setCategoryVisibility((prevVisibility) => ({
+      ...prevVisibility,
+      [category]: !prevVisibility[category],
+    }));
   };
 
   const handleWhatsAppClick = () => {
-    // WhatsApp karşılama mesajı
-    const welcomeMessage = "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
-  
-    // WhatsApp'a yönlendirme linki
-    const whatsappLink = `https://wa.me/05078298858?text=${encodeURIComponent(welcomeMessage)}`;
-  
-    // Yeni sekmede WhatsApp linkini aç
-    window.open(whatsappLink, "_blank" );
+    const welcomeMessage =
+      "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
+
+    const whatsappLink = `https://wa.me/05078298858?text=${encodeURIComponent(
+      welcomeMessage
+    )}`;
+
+    window.open(whatsappLink, "_blank");
   };
-  
+
+  const categories = ["PİLAV", "MAKARNA", "DİĞER"];
 
   return (
     <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-5">
@@ -60,9 +41,53 @@ const QrMenu = () => {
         MENÜ
       </h1>
 
-      {renderMenuItems()}
+      {categories.map((category) => (
+        <div key={category} className="mb-6">
+          <h2
+            onClick={() => toggleCategoryVisibility(category)}
+            className="text-2xl flex items-center justify-between mb-3 text-rose-500 font-bold rounded-md pl-2 cursor-pointer"
+          >
+            {category}
+            <p>
+              {!categoryVisibility[category] ? (
+                <FaChevronDown size={20} />
+              ) : (
+                <FaChevronUp size={20} />
+              )}
+            </p>
+          </h2>
+          <div
+            className={`category-content ${
+              categoryVisibility[category] ? "" : "collapsed"
+            }`}
+          >
+            <div className="w-full h-[4px] mb-2 rounded-full bg-rose-500"></div>
+            <ul>
+              {menuItems
+                .filter((menuItem) => menuItem.category === category)
+                .map((menuItem) => (
+                  <li key={menuItem.id} className="py-1">
+                    <div className="flex items-center justify-between">
+                      <strong className="text-lg font-normal text-white pl-2">
+                        {menuItem.name}
+                      </strong>
+                      <p className="text-sm text-black bg-white p-2 rounded-xl font-semibold">
+                        {menuItem.price} TL
+                      </p>
+                    </div>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+
       <div className="flex">
-        <a href="https://www.instagram.com/piloveyou.1" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/piloveyou.1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
         </a>
         <a onClick={handleWhatsAppClick} rel="noopener noreferrer">

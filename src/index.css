@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-padding: 0;
-margin: 0;
-background: black;
-font-family: 'Baloo Chettan 2', sans-serif;
+  padding: 0;
+  margin: 0;
+  background: black;
+  font-family: "Baloo Chettan 2", sans-serif;
+}
+
+.category-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.category-content.collapsed {
+  max-height: 500px; /* Uygun bir değer belirleyin */
+  opacity: 1;
 }
