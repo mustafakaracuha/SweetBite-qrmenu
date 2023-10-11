@@ -9,6 +9,8 @@ import {
 
 import menuItems from "../../data/menuItems";
 
+
+
 const QrMenu = () => {
   const [categoryVisibility, setCategoryVisibility] = useState({});
 
@@ -87,7 +89,7 @@ const QrMenu = () => {
         </div>
       ))}
 
-      <div className="fixed bottom-5 flex">
+      <div className="flex">
         <a
           href="https://www.instagram.com/piloveyou.1"
           target="_blank"
