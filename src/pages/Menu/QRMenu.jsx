@@ -53,7 +53,11 @@ const QrMenu = () => {
         <a href="https://www.instagram.com/piloveyou.1" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
         </a>
-        <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://api.whatsapp.com/send?phone=05078298858&text=Merhaba,%20Pi%20LOVE%20YOU%20menu%20sorgusu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaWhatsapp className="text-3xl text-white mx-4 cursor-pointer" />
         </a>
       </div>
