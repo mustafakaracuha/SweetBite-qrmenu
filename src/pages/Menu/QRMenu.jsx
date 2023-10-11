@@ -68,9 +68,9 @@ const QrMenu = () => {
             {category}
             <p>
               {!categoryVisibility[category] ? (
-                <img src={spoon} className=" -rotate-[3deg] mr-1" width={22} alt="" />
+                <img src={spoon} className=" -rotate-[3deg] mr-1" width={24} alt="" />
               ) : (
-                <img src={fork} className=" rotate-[40deg] mr-3" width={7} alt="" />
+                <img src={fork} className=" rotate-[41deg] mr-3" width={8} alt="" />
               )}
             </p>
           </h2>
