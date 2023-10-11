@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import { FaWhatsapp, FaInstagram, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaInstagram,
+  FaChevronDown,
+  FaChevronUp,
+} from "react-icons/fa";
 
 import menuItems from "../../data/menuItems";
 
@@ -96,12 +101,14 @@ const QrMenu = () => {
       </div>
 
       <div className="fixed right-0 bottom-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
-        <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
-          Pi LOVE YOU
-        </p>
-        <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
-          0507 829 88 58
-        </p>
+        <a href="tel:+905078298858" className="block bg-transparent">
+          <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
+            Pi LOVE YOU
+          </p>
+          <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
+            0507 829 88 58
+          </p>
+        </a>
       </div>
     </div>
   );
