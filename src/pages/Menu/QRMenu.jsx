@@ -72,20 +72,24 @@ const QrMenu = () => {
           >
             <div className="w-full h-[4px] mb-2 rounded-full bg-rose-500"></div>
             <ul className="bg-transparent">
-              {menuItems
-                .filter((menuItem) => menuItem.category === category)
-                .map((menuItem) => (
-                  <li key={menuItem.id} className="py-2">
-                    <div className="flex items-center justify-between">
-                      <strong className="text-lg font-normal text-white pl-2">
-                        {menuItem.name}
-                      </strong>
-                      <p className="w-14 flex items-center justify-center text-md text-black bg-white p-2 rounded-xl font-semibold">
-                        {menuItem.price} TL
-                      </p>
-                    </div>
-                  </li>
-                ))}
+            {menuItems
+  .filter((menuItem) => menuItem.category === category)
+  .map((menuItem) => (
+    <li key={menuItem.id} className="py-2 flex items-center justify-between">
+      <div className="flex flex-col items-start">
+        <strong className="text-lg font-normal text-white pl-2">
+          {menuItem.name}
+        </strong>
+        <p className="text-sm text-gray-500 pl-2">{menuItem.description}</p>
+      </div>
+      <div className="flex items-center justify-between mt-2">
+        <p className="w-14 text-md text-black bg-white p-2 rounded-xl font-semibold">
+          {menuItem.price} TL
+        </p>
+      </div>
+    </li>
+  ))}
+
             </ul>
           </div>
         </div>
