@@ -42,7 +42,7 @@ const QrMenu = () => {
     const whatsappLink = `https://wa.me/05078298858?text=${encodeURIComponent(welcomeMessage)}`;
   
     // Yeni sekmede WhatsApp linkini aç
-    window.open(whatsappLink, "_blank");
+    window.open(whatsappLink, "_blank" );
   };
   
 
