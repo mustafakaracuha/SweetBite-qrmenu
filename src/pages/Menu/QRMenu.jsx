@@ -87,7 +87,7 @@ const QrMenu = () => {
         </div>
       ))}
 
-      <div className="flex">
+      <div className="fixed bottom-5 flex">
         <a
           href="https://www.instagram.com/piloveyou.1"
           target="_blank"

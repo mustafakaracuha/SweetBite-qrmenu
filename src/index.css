@@ -7,6 +7,7 @@
   margin: 0;
   background: black;
   font-family: "Baloo Chettan 2", sans-serif;
+  user-select: none;
 }
 
 .category-content {
