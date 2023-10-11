@@ -1,12 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 import menuItems from "../../data/menuItems";
-
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
-
-
 
 const QrMenu = () => {
   const renderMenuItems = () => {
@@ -62,8 +58,7 @@ const QrMenu = () => {
         </a>
       </div>
 
-      {/* Altta sabit konumlanmış içerik */}
-      <div className="sticky w-52 ml-auto p-1 pl-10 text-right bg-rose-500 rounded-l-full">
+      <div className="fixed right-0 bottom-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
         <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
           Pi LOVE YOU
         </p>
