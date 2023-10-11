@@ -7,6 +7,19 @@ import {
   FaChevronUp,
 } from "react-icons/fa";
 
+import {
+  FaSpoon,
+} from "react-icons/fa6";
+
+import {
+  BiFork,
+} from "react-icons/bi";
+
+import fork from "../../fork.svg";
+import spoon from "../../spoon.svg";
+
+
+
 import menuItems from "../../data/menuItems";
 
 const QrMenu = () => {
@@ -39,7 +52,7 @@ const QrMenu = () => {
         <title>Pi LOVE YOU | Menü</title>
       </Helmet>
 
-      <h1 className="text-5xl flex items-start justify-start font-extrabold text-start text-rose-500 pl-2">
+      <h1 className="text-5xl flex items-start justify-start font-extrabold text-start mb-2 text-rose-500 pl-2">
         Pi LOVE YOU
       </h1>
       <h1 className="text-4xl font-semibold mb-8 text-start text-white pl-2">
@@ -47,17 +60,17 @@ const QrMenu = () => {
       </h1>
 
       {categories.map((category) => (
-        <div key={category} className="mb-5">
+        <div key={category} className="mb-5 zIndex">
           <h2
             onClick={() => toggleCategoryVisibility(category)}
-            className="text-2xl flex items-center justify-between mb-3 text-rose-500 font-bold rounded-md pl-2 cursor-pointer"
+            className="text-2xl flex items-center justify-between mb-3 zIndex text-rose-500 font-bold rounded-md pl-2 cursor-pointer"
           >
             {category}
             <p>
               {!categoryVisibility[category] ? (
-                <FaChevronDown size={20} />
+                <img src={spoon} className=" -rotate-[3deg] mr-1" width={22} alt="" />
               ) : (
-                <FaChevronUp size={20} />
+                <img src={fork} className=" rotate-[40deg] mr-3" width={7} alt="" />
               )}
             </p>
           </h2>
@@ -67,7 +80,7 @@ const QrMenu = () => {
             }`}
           >
             <div className="w-full h-[4px] mb-2 rounded-full bg-rose-500"></div>
-            <ul>
+            <ul className="bg-transparent">
               {menuItems
                 .filter((menuItem) => menuItem.category === category)
                 .map((menuItem) => (
