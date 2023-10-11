@@ -33,7 +33,7 @@ const QrMenu = () => {
   const categories = ["PİLAV", "MAKARNA", "DİĞER"];
 
   return (
-    <div className="max-w-md max-h-screen mx-auto mt-2 p-9 pb-auto mb-5">
+    <div className="max-w-md max-h-screen mx-auto mt-3 p-9 overflow-auto pb-16">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Pi LOVE YOU | Menü</title>
