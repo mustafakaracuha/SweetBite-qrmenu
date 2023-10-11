@@ -54,7 +54,7 @@ const QrMenu = () => {
 
       {renderMenuItems()}
       <div className="w-full flex items-center">
-      <div className="flex mb-5">
+      <div className="flex">
         <a href="https://www.instagram.com/piloveyou.1" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
         </a>
