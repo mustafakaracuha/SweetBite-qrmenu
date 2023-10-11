@@ -45,17 +45,15 @@ const QrMenu = () => {
         <title>Pi LOVE YOU</title>
       </Helmet>
 
-      <div className="flex relative mt-3">
       <h1 className="text-5xl flex items-start justify-start font-[700] text-start text-rose-500 pl-2">
         Pi LOVE YOU 
       </h1>
-      <IoClose className="absolute right-6 bottom-11 left-52 m-auto text-3xl text-rose-500 cursor-pointer" />
-      </div>
       <h1 className="text-4xl font-[500] mb-8 text-start text-white pl-2">
         MENÜ
       </h1>
 
       {renderMenuItems()}
+      <div className="w-full flex items-center">
       <div className="flex mb-5">
         <a href="https://www.instagram.com/piloveyou.1" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
@@ -66,13 +64,14 @@ const QrMenu = () => {
       </div>
 
       {/* Altta sabit konumlanmış içerik */}
-      <div className="fixed bottom-0 right-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
+      <div className=" ml-auto  p-1 pl-10 text-right bg-rose-500 rounded-l-full">
         <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
           Pi LOVE YOU
         </p>
         <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
           0507 829 88 58
         </p>
+      </div>
       </div>
     </div>
   );
