@@ -80,7 +80,7 @@ const QrMenu = () => {
                       <strong className="text-lg font-normal text-white pl-2">
                         {menuItem.name}
                       </strong>
-                      <p className="w-14 flex items-center justify-center text-sm text-black bg-white p-2 rounded-xl font-semibold">
+                      <p className="w-14 flex items-center justify-center text-md text-black bg-white p-2 rounded-xl font-semibold">
                         {menuItem.price} TL
                       </p>
                     </div>
