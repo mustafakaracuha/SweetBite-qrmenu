@@ -3,16 +3,12 @@ import { Helmet } from "react-helmet";
 import {
   FaWhatsapp,
   FaInstagram,
-  FaChevronDown,
-  FaChevronUp,
 } from "react-icons/fa";
 
+import { GiChicken } from "react-icons/gi";
 import { FaSpoon } from "react-icons/fa6";
 
-import { BiFork } from "react-icons/bi";
-
 import fork from "../../fork.svg";
-import spoon from "../../spoon.svg";
 
 import menuItems from "../../data/menuItems";
 
@@ -27,12 +23,9 @@ const QrMenu = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const welcomeMessage =
-      "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
+    const welcomeMessage = "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
 
-    const whatsappLink = `https://wa.me/905078298858?text=${encodeURIComponent(
-      welcomeMessage
-    )}`;
+    const whatsappLink = `https://wa.me/905078298858?text=${encodeURIComponent(welcomeMessage)}`;
 
     window.open(whatsappLink, "_blank");
   };
@@ -46,8 +39,9 @@ const QrMenu = () => {
         <title>Pi LOVE YOU | Menü</title>
       </Helmet>
 
-      <h1 className="text-5xl flex items-start justify-start font-extrabold text-start mb-2 text-rose-500 pl-2">
+      <h1 className="text-5xl flex items-start justify-between font-extrabold text-start mb-2 text-rose-500 pl-2 relative">
         Pi LOVE YOU
+        <GiChicken size={45} className=" text-rose-500 animate-bounce"/>
       </h1>
       <h1 className="text-4xl font-semibold mb-8 text-start text-white pl-2">
         MENÜ
@@ -62,12 +56,7 @@ const QrMenu = () => {
             {category}
             <p>
               {!categoryVisibility[category] ? (
-                <img
-                  src={spoon}
-                  className=" -rotate-[3deg] mr-1"
-                  width={24}
-                  alt=""
-                />
+                <FaSpoon size={23} className="text-rose-500 mr-1" />
               ) : (
                 <img
                   src={fork}
