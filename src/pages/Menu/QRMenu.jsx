@@ -7,18 +7,12 @@ import {
   FaChevronUp,
 } from "react-icons/fa";
 
-import {
-  FaSpoon,
-} from "react-icons/fa6";
+import { FaSpoon } from "react-icons/fa6";
 
-import {
-  BiFork,
-} from "react-icons/bi";
+import { BiFork } from "react-icons/bi";
 
 import fork from "../../fork.svg";
 import spoon from "../../spoon.svg";
-
-
 
 import menuItems from "../../data/menuItems";
 
@@ -68,9 +62,19 @@ const QrMenu = () => {
             {category}
             <p>
               {!categoryVisibility[category] ? (
-                <img src={spoon} className=" -rotate-[3deg] mr-1" width={24} alt="" />
+                <img
+                  src={spoon}
+                  className=" -rotate-[3deg] mr-1"
+                  width={24}
+                  alt=""
+                />
               ) : (
-                <img src={fork} className=" rotate-[41deg] mr-3" width={8} alt="" />
+                <img
+                  src={fork}
+                  className=" rotate-[41deg] mr-3"
+                  width={8}
+                  alt=""
+                />
               )}
             </p>
           </h2>
