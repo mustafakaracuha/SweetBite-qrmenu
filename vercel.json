@@ -1,7 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "/menu"
+        "source": "/menu",
+        "destination": "/menu"
       }
     ],
     "routes": [
