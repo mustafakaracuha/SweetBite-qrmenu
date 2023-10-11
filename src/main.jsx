@@ -1,22 +1,21 @@
 import React from 'react';
-import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter,RouterProvider} from "react-router-dom";
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import { createRoot } from 'react-dom';
 import QRScanner from './pages/Scanner/QRScanner';
 import QRMenu from './pages/Menu/QRMenu';
 import './index.css';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <QRScanner/>,
-  },
-  {
-    path: "menu",
-    element: <QRMenu/>,
-  },
-]);
+const history = createBrowserHistory();
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-    <RouterProvider router={router} />
+const App = () => (
+  <BrowserRouter history={history}>
+    <Routes>
+      <Route path="/" element={<QRScanner />} />
+      <Route path="/menu" element={<QRMenu />} />
+    </Routes>
+  </BrowserRouter>
 );
+
+const rootElement = document.getElementById('root');
+createRoot(rootElement).render(<App />);
