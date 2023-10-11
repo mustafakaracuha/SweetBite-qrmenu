@@ -1,7 +1,12 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import menuItems from "../../data/menuItems";
 
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+
+
 
 const QrMenu = () => {
   const renderMenuItems = () => {
@@ -35,28 +40,40 @@ const QrMenu = () => {
 
   return (
     <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-5">
-      <h1 className="text-5xl font-[700] mb-2 text-start text-rose-500 pl-2">
-        Pi LOVE YOU *
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Pi LOVE YOU</title>
+      </Helmet>
+
+      <div className="flex relative mt-3">
+      <h1 className="text-5xl flex items-start justify-start font-[700] text-start text-rose-500 pl-2">
+        Pi LOVE YOU 
       </h1>
+      <IoClose className="absolute right-6 bottom-11 left-52 m-auto text-3xl text-rose-500 cursor-pointer" />
+      </div>
       <h1 className="text-4xl font-[500] mb-8 text-start text-white pl-2">
         MENÜ
       </h1>
 
       {renderMenuItems()}
-      <div className='flex mb-5'>
-      <a href="instagram-link" target="_blank" rel="noopener noreferrer">
-        <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
-      </a>
-      <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">
-        <FaWhatsapp className="text-3xl text-white mx-4 cursor-pointer" />
-      </a>
-    </div>
+      <div className="flex mb-5">
+        <a href="https://www.instagram.com/piloveyou.1" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
+        </a>
+        <a href="whatsapp-link" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="text-3xl text-white mx-4 cursor-pointer" />
+        </a>
+      </div>
 
-    {/* Altta sabit konumlanmış içerik */}
-    <div className="fixed bottom-0 right-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
-      <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">Pi LOVE YOU</p>
-      <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">0507 829 88 58</p>
-    </div>
+      {/* Altta sabit konumlanmış içerik */}
+      <div className="fixed bottom-0 right-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
+        <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
+          Pi LOVE YOU
+        </p>
+        <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
+          0507 829 88 58
+        </p>
+      </div>
     </div>
   );
 };
