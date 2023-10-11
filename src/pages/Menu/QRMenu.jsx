@@ -9,8 +9,6 @@ import {
 
 import menuItems from "../../data/menuItems";
 
-
-
 const QrMenu = () => {
   const [categoryVisibility, setCategoryVisibility] = useState({});
 
@@ -35,7 +33,7 @@ const QrMenu = () => {
   const categories = ["PİLAV", "MAKARNA", "DİĞER"];
 
   return (
-    <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-8">
+    <div className="max-w-md max-h-screen mx-auto mt-2 p-9 pb-auto mb-5">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Pi LOVE YOU | Menü</title>
@@ -89,7 +87,7 @@ const QrMenu = () => {
         </div>
       ))}
 
-      <div className="fixed w-full bg-black bottom-0 pb-5 flex">
+      <div className="fixed flex w-full bg-black bottom-0 pb-5">
         <a
           href="https://www.instagram.com/piloveyou.1"
           target="_blank"
