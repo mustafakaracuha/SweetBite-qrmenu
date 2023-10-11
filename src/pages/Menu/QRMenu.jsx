@@ -35,7 +35,7 @@ const QrMenu = () => {
   const categories = ["PİLAV", "MAKARNA", "DİĞER"];
 
   return (
-    <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-5">
+    <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-8">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Pi LOVE YOU | Menü</title>
@@ -49,7 +49,7 @@ const QrMenu = () => {
       </h1>
 
       {categories.map((category) => (
-        <div key={category} className="mb-6">
+        <div key={category} className="mb-5">
           <h2
             onClick={() => toggleCategoryVisibility(category)}
             className="text-2xl flex items-center justify-between mb-3 text-rose-500 font-bold rounded-md pl-2 cursor-pointer"
@@ -89,7 +89,7 @@ const QrMenu = () => {
         </div>
       ))}
 
-      <div className="flex">
+      <div className="fixed w-full bg-black bottom-0 pb-5 flex">
         <a
           href="https://www.instagram.com/piloveyou.1"
           target="_blank"
