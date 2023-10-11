@@ -23,7 +23,7 @@ const QrMenu = () => {
     const welcomeMessage =
       "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
 
-    const whatsappLink = `https://wa.me/05078298858?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/905078298858?text=${encodeURIComponent(
       welcomeMessage
     )}`;
 

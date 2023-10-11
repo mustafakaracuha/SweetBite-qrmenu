@@ -1,10 +1,10 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-import { createRoot } from 'react-dom';
-import QRScanner from './pages/Scanner/QRScanner';
-import QRMenu from './pages/Menu/QRMenu';
-import './index.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import { createRoot } from "react-dom";
+import QRScanner from "./pages/Scanner/QRScanner";
+import QRMenu from "./pages/Menu/QRMenu";
+import "./index.css";
 
 const history = createBrowserHistory();
 
@@ -17,5 +17,5 @@ const App = () => (
   </BrowserRouter>
 );
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 createRoot(rootElement).render(<App />);

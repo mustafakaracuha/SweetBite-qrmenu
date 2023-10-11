@@ -18,6 +18,6 @@
 }
 
 .category-content.collapsed {
-  max-height: 500px; /* Uygun bir değer belirleyin */
+  max-height: 500px;
   opacity: 1;
 }
