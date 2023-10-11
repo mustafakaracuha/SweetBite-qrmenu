@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      {
+        "source": "/menu",
+        "destination": "/menu"
+      }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
+  }
+  
