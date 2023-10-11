@@ -5,7 +5,7 @@ function QRScanner() {
   const [value, setValue] = useState("https://piloveyou-menu.vercel.app");
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className=" max-w-md mx-auto flex flex-col items-center justify-center min-h-screen">
       <h1 className="text-5xl font-extrabold mb-2 text-rose-500">Pi LOVE YOU</h1>
       <h2 className="text-3xl font-bold mb-8 text-white">Hoş geldiniz</h2>
 
