@@ -50,7 +50,7 @@ const QrMenu = () => {
     <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-5">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Pi LOVE YOU</title>
+        <title>Pi LOVE YOU | Menü</title>
       </Helmet>
 
       <h1 className="text-5xl flex items-start justify-start font-extrabold text-start text-rose-500 pl-2">
