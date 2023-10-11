@@ -5,7 +5,6 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-import { GiChicken } from "react-icons/gi";
 import { FaSpoon } from "react-icons/fa6";
 
 import fork from "../../fork.svg";
@@ -30,7 +29,7 @@ const QrMenu = () => {
     window.open(whatsappLink, "_blank");
   };
 
-  const categories = ["PİLAV", "MAKARNA", "DİĞER"];
+  const categories = ["PİLAV", "MAKARNA", "DİĞER", "İÇECEKLER"];
 
   return (
     <div className="max-w-md min-h-auto mx-auto mt-3 p-9 pb-16">
@@ -41,14 +40,13 @@ const QrMenu = () => {
 
       <h1 className="text-5xl flex items-start justify-between font-extrabold text-start mb-2 text-rose-500 pl-2 relative">
         Pi LOVE YOU
-        <GiChicken size={45} className=" text-rose-500 animate-bounce"/>
       </h1>
       <h1 className="text-4xl font-semibold mb-8 text-start text-white pl-2">
         MENÜ
       </h1>
 
       {categories.map((category) => (
-        <div key={category} className="mb-5 zIndex">
+        <div key={category} className="mb-4 zIndex">
           <h2
             onClick={() => toggleCategoryVisibility(category)}
             className="text-2xl flex items-center justify-between mb-3 zIndex text-rose-500 font-bold rounded-md pl-2 cursor-pointer"
@@ -69,7 +67,7 @@ const QrMenu = () => {
           </h2>
           <div
             className={`category-content ${
-              categoryVisibility[category] ? "" : "collapsed"
+              !categoryVisibility[category] ? "" : "collapsed"
             }`}
           >
             <div className="w-full h-[4px] mb-2 rounded-full bg-rose-500"></div>
@@ -77,12 +75,12 @@ const QrMenu = () => {
               {menuItems
                 .filter((menuItem) => menuItem.category === category)
                 .map((menuItem) => (
-                  <li key={menuItem.id} className="py-1">
+                  <li key={menuItem.id} className="py-2">
                     <div className="flex items-center justify-between">
                       <strong className="text-lg font-normal text-white pl-2">
                         {menuItem.name}
                       </strong>
-                      <p className="text-sm text-black bg-white p-2 rounded-xl font-semibold">
+                      <p className="w-14 flex items-center justify-center text-sm text-black bg-white p-2 rounded-xl font-semibold">
                         {menuItem.price} TL
                       </p>
                     </div>
