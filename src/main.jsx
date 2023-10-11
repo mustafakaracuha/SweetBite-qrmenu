@@ -7,12 +7,12 @@ import QRMenu from './pages/Menu/QRMenu';
 import './index.css';
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <QRScanner/>,
-  // },
   {
     path: "/",
+    element: <QRScanner/>,
+  },
+  {
+    path: "menu",
     element: <QRMenu/>,
   },
 ]);

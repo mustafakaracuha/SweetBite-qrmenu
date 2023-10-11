@@ -34,6 +34,18 @@ const QrMenu = () => {
     ));
   };
 
+  const handleWhatsAppClick = () => {
+    // WhatsApp karşılama mesajı
+    const welcomeMessage = "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
+  
+    // WhatsApp'a yönlendirme linki
+    const whatsappLink = `https://wa.me/05078298858?text=${encodeURIComponent(welcomeMessage)}`;
+  
+    // Yeni sekmede WhatsApp linkini aç
+    window.open(whatsappLink, "_blank");
+  };
+  
+
   return (
     <div className="max-w-md max-h-screen mx-auto mt-2 p-9 mb-5">
       <Helmet>
@@ -53,11 +65,7 @@ const QrMenu = () => {
         <a href="https://www.instagram.com/piloveyou.1" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
         </a>
-        <a
-          href="https://api.whatsapp.com/send?phone=05078298858&text=Merhaba,%20Pi%20LOVE%20YOU%20menu%20sorgusu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a onClick={handleWhatsAppClick} rel="noopener noreferrer">
           <FaWhatsapp className="text-3xl text-white mx-4 cursor-pointer" />
         </a>
       </div>
