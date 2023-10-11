@@ -63,7 +63,7 @@ const QrMenu = () => {
       </div>
 
       {/* Altta sabit konumlanmış içerik */}
-      <div className="fixed right-0 bottom-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
+      <div className="sticky w-52 ml-auto p-1 pl-10 text-right bg-rose-500 rounded-l-full">
         <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
           Pi LOVE YOU
         </p>
