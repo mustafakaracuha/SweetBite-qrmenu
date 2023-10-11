@@ -10,20 +10,20 @@ const QrMenu = () => {
 
     return categories.map((category) => (
       <div key={category} className="mb-6">
-        <h2 className="text-xl mb-3 text-rose-500 font-bold rounded-md pl-2">
+        <h2 className="text-2xl mb-3 text-rose-500 font-bold rounded-md pl-2">
           {category}
         </h2>
-        <div className="w-full h-[6px] mb-2 rounded-full bg-rose-500"></div>
+        <div className="w-full h-[4px] mb-2 rounded-full bg-rose-500"></div>
         <ul>
           {menuItems
             .filter((menuItem) => menuItem.category === category)
             .map((menuItem) => (
               <li key={menuItem.id} className="py-1">
                 <div className="flex items-center justify-between">
-                  <strong className="text-lg font-[400] text-white pl-2">
+                  <strong className="text-lg font-normal text-white pl-2">
                     {menuItem.name}
                   </strong>
-                  <p className="text-sm text-black bg-white p-2 rounded-xl font-[600]">
+                  <p className="text-sm text-black bg-white p-2 rounded-xl font-semibold">
                     {menuItem.price} TL
                   </p>
                 </div>
@@ -41,10 +41,10 @@ const QrMenu = () => {
         <title>Pi LOVE YOU</title>
       </Helmet>
 
-      <h1 className="text-5xl flex items-start justify-start font-[700] text-start text-rose-500 pl-2">
-        Pi LOVE YOU 
+      <h1 className="text-5xl flex items-start justify-start font-extrabold text-start text-rose-500 pl-2">
+        Pi LOVE YOU
       </h1>
-      <h1 className="text-4xl font-[500] mb-8 text-start text-white pl-2">
+      <h1 className="text-4xl font-semibold mb-8 text-start text-white pl-2">
         MENÜ
       </h1>
 
