@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import QRCode from "react-qr-code";
 
 function QRScanner() {
-  const [value, setValue] = useState("https://piloveyou-menu.vercel.app");
+  const [value, setValue] = useState("https://piloveyou-menu.vercel.app/menu");
 
   return (
     <div className=" max-w-md mx-auto flex flex-col items-center justify-center min-h-screen">
