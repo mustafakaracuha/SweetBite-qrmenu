@@ -98,7 +98,7 @@ const QrMenu = () => {
                     </div>
                     <div className="flex items-center justify-between mt-2">
                       <p className="w-14 flex items-center justify-center text-md text-black bg-white p-2 rounded-xl font-semibold">
-                        {menuItem.price} TL
+                        {menuItem.price} ₺
                       </p>
                     </div>
                   </li>
