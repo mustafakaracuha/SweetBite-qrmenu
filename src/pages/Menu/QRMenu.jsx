@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Helmet } from "react-helmet";
-import {
-  FaWhatsapp,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 import { FaSpoon } from "react-icons/fa6";
 
@@ -13,6 +10,7 @@ import menuItems from "../../data/menuItems";
 
 const QrMenu = () => {
   const [categoryVisibility, setCategoryVisibility] = useState({});
+  const [initialCategory] = useState("PİLAV");
 
   const toggleCategoryVisibility = (category) => {
     setCategoryVisibility((prevVisibility) => ({
@@ -22,12 +20,23 @@ const QrMenu = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const welcomeMessage = "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
+    const welcomeMessage =
+      "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
 
-    const whatsappLink = `https://wa.me/905078298858?text=${encodeURIComponent(welcomeMessage)}`;
+    const whatsappLink = `https://wa.me/905078298858?text=${encodeURIComponent(
+      welcomeMessage
+    )}`;
 
     window.open(whatsappLink, "_blank");
   };
+
+  useEffect(() => {
+    // Kategori açılışını belirle
+    setCategoryVisibility((prevVisibility) => ({
+      ...prevVisibility,
+      [initialCategory]: true,
+    }));
+  }, [initialCategory]);
 
   const categories = ["PİLAV", "MAKARNA", "DİĞER", "İÇECEKLER"];
 
@@ -46,7 +55,7 @@ const QrMenu = () => {
       </h1>
 
       {categories.map((category) => (
-        <div key={category} className="mb-4 zIndex">
+        <div key={category} className="mb-4">
           <h2
             onClick={() => toggleCategoryVisibility(category)}
             className="text-2xl flex items-center justify-between mb-3 zIndex text-rose-500 font-bold rounded-md pl-2 cursor-pointer"
@@ -72,24 +81,28 @@ const QrMenu = () => {
           >
             <div className="w-full h-[4px] mb-2 rounded-full bg-rose-500"></div>
             <ul className="bg-transparent">
-            {menuItems
-  .filter((menuItem) => menuItem.category === category)
-  .map((menuItem) => (
-    <li key={menuItem.id} className="py-2 flex items-center justify-between">
-      <div className="flex flex-col items-start">
-        <strong className="text-lg font-normal text-white pl-2">
-          {menuItem.name}
-        </strong>
-        <p className="text-sm text-gray-500 pl-2">{menuItem.description}</p>
-      </div>
-      <div className="flex items-center justify-between mt-2">
-        <p className="w-14 text-md text-black bg-white p-2 rounded-xl font-semibold">
-          {menuItem.price} TL
-        </p>
-      </div>
-    </li>
-  ))}
-
+              {menuItems
+                .filter((menuItem) => menuItem.category === category)
+                .map((menuItem) => (
+                  <li
+                    key={menuItem.id}
+                    className="py-2 flex items-center justify-between"
+                  >
+                    <div className="flex flex-col items-start">
+                      <strong className="text-lg font-normal text-white pl-2">
+                        {menuItem.name}
+                      </strong>
+                      <p className="text-md text-gray-500 pl-2">
+                        {menuItem.description}
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-between mt-2">
+                      <p className="w-14 flex items-center justify-center text-md text-black bg-white p-2 rounded-xl font-semibold">
+                        {menuItem.price} TL
+                      </p>
+                    </div>
+                  </li>
+                ))}
             </ul>
           </div>
         </div>
