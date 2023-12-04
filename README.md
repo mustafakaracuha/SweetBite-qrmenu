@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://github.com/mustafakaracuha/SweetBite-qrmenu/blob/main/src/assets/app/1.png" alt="Home" width="400" />
-  <img src="https://github.com/mustafakaracuha/SweetBite-qrmenu/blob/main/src/assets/app/3.png" alt="Detail" width="390" />
+  <img src="https://github.com/mustafakaracuha/SweetBite-qrmenu/blob/main/src/assets/app/3.png" alt="Detail" width="370" />
 </p>
 
 This project utilizes the following technologies and libraries:
