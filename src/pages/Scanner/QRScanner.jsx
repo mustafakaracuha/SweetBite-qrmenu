@@ -9,7 +9,7 @@ function QRScanner() {
     <div className=" max-w-md mx-auto flex flex-col items-center justify-center min-h-screen">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>SweetBite | Tavuk Pilav</title>
+        <title>SweetBite | Menu</title>
       </Helmet>
       <h1 className="text-5xl font-extrabold mb-2 text-rose-500">
       SweetBite

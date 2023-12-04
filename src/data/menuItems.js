@@ -183,6 +183,20 @@ const menuItems = [
     price: 45,
     description: "Taze muz ve süt karışımı",
   },
+  {
+    id: 20,
+    category: "İÇECEKLER",
+    name: "Türk Kahvesi",
+    price: 45,
+    description: "Öğütülmüş kahve çekirdekleri, yoğun ve aromatik tadıyla Türk kahvesi",
+  },
+  {
+    id: 21,
+    category: "İÇECEKLER",
+    name: "Filtre Kahve",
+    price: 45,
+    description: "İnce öğütülmüş kahve çekirdekleri, özel filtre ile demlenerek içimine hafiflik ve keyif katıyor",
+  },
 ];
 
 export default menuItems;
