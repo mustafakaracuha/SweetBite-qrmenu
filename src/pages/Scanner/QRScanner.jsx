@@ -9,10 +9,10 @@ function QRScanner() {
     <div className=" max-w-md mx-auto flex flex-col items-center justify-center min-h-screen">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Pi LOVE YOU | Tavuk Pilav</title>
+        <title>SweetBite | Tavuk Pilav</title>
       </Helmet>
       <h1 className="text-5xl font-extrabold mb-2 text-rose-500">
-        Pi LOVE YOU
+      SweetBite
       </h1>
       <h2 className="text-3xl font-bold mb-8 text-white">Hoş geldiniz</h2>
 

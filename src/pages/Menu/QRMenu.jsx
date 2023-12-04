@@ -10,7 +10,7 @@ import menuItems from "../../data/menuItems";
 
 const QrMenu = () => {
   const [categoryVisibility, setCategoryVisibility] = useState({});
-  const [initialCategory] = useState("PİLAV");
+  const [initialCategory] = useState("TATLI");
 
   const toggleCategoryVisibility = (category) => {
     setCategoryVisibility((prevVisibility) => ({
@@ -21,9 +21,9 @@ const QrMenu = () => {
 
   const handleWhatsAppClick = () => {
     const welcomeMessage =
-      "Merhaba! Pi LOVE YOU restoranına hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
+      "Merhaba! SweetBite Pastanesine hoş geldiniz. Menümüzdeki lezzetli yemekleri görmek ve sipariş vermek için buradayız. Size nasıl yardımcı olabiliriz?";
 
-    const whatsappLink = `https://wa.me/905078298858?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/9052278298858?text=${encodeURIComponent(
       welcomeMessage
     )}`;
 
@@ -38,20 +38,20 @@ const QrMenu = () => {
     }));
   }, [initialCategory]);
 
-  const categories = ["PİLAV", "MAKARNA", "DİĞER", "İÇECEKLER"];
+  const categories = ["TATLI", "MAKARNA", "DİĞER", "İÇECEKLER"];
 
   return (
     <div className="max-w-md min-h-auto mx-auto mt-3 p-9 pb-16">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Pi LOVE YOU | Menü</title>
+        <title>SweetBite | Menü</title>
       </Helmet>
 
       <h1 className="text-5xl flex items-start justify-between font-extrabold text-start mb-2 text-rose-500 pl-2 relative">
-        Pi LOVE YOU
+      SweetBite
       </h1>
       <h1 className="text-4xl font-semibold mb-8 text-start text-white pl-2">
-        MENÜ
+      Menü
       </h1>
 
       {categories.map((category) => (
@@ -110,7 +110,6 @@ const QrMenu = () => {
 
       <div className="fixed flex w-full bg-black bottom-0 pb-5">
         <a
-          href="https://www.instagram.com/piloveyou.1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -124,10 +123,10 @@ const QrMenu = () => {
       <div className="fixed right-0 bottom-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
         <a href="tel:+905078298858" className="block bg-transparent">
           <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
-            Pi LOVE YOU
+          SweetBite
           </p>
           <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
-            0507 829 88 58
+            05227 829 28 48
           </p>
         </a>
       </div>
