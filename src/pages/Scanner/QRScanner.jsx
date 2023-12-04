@@ -3,7 +3,7 @@ import QRCode from "react-qr-code";
 import { Helmet } from "react-helmet";
 
 function QRScanner() {
-  const [value, setValue] = useState("https://piloveyou.vercel.app/menu");
+  const [value, setValue] = useState("https://sweet-bite-qrmenu.vercel.app/menu");
 
   return (
     <div className=" max-w-md mx-auto flex flex-col items-center justify-center min-h-screen">

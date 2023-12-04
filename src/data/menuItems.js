@@ -188,14 +188,16 @@ const menuItems = [
     category: "İÇECEKLER",
     name: "Türk Kahvesi",
     price: 45,
-    description: "Öğütülmüş kahve çekirdekleri, yoğun ve aromatik tadıyla Türk kahvesi",
+    description:
+      "Öğütülmüş kahve çekirdekleri, yoğun ve aromatik tadıyla Türk kahvesi",
   },
   {
     id: 21,
     category: "İÇECEKLER",
     name: "Filtre Kahve",
     price: 45,
-    description: "İnce öğütülmüş kahve çekirdekleri, özel filtre ile demlenerek içimine hafiflik ve keyif katıyor",
+    description:
+      "İnce öğütülmüş kahve çekirdekleri, özel filtre ile demlenerek içimine hafiflik ve keyif katıyor",
   },
 ];
 
