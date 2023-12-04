@@ -9,9 +9,7 @@ This project utilizes the following technologies and libraries:
 
 - React: A JavaScript library for building user interfaces.
 - TailwindCss: A utility-first CSS framework for rapidly building custom designs.
-- Material-UI: A popular UI framework for React applications.
 - react-qr-code: A library designed for effortlessly integrating QR codes into your React applications.
-- avvvatars-react: A library for adding an avatar to your React application.
 
 ## How to Use
 
