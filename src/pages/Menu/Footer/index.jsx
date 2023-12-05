@@ -16,7 +16,7 @@ function index() {
   return (
     <div>
       <div className="fixed flex w-full bg-black bottom-0 pb-5">
-        <a target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
         </a>
         <a onClick={handleWhatsAppClick} rel="noopener noreferrer">
