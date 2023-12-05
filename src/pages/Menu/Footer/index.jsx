@@ -25,7 +25,7 @@ function index() {
       </div>
 
       <div className="fixed right-0 bottom-0 p-1 pl-10 text-right bg-rose-500 rounded-l-full">
-        <a href="tel:+905078298858" className="block bg-transparent">
+        <a href="tel:+9052278298858" className="block bg-transparent">
           <p className="rounded-l-full bg-transparent text-lg text-white font-bold text-right pr-2">
             SweetBite
           </p>
