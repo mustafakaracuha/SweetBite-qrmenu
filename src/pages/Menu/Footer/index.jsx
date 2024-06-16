@@ -12,7 +12,7 @@ function index() {
 
     return (
         <div>
-            <div className="fixed flex w-full bg-black bottom-0 pb-5">
+            <div className="fixed flex w-full bg-black bottom-0 pb-5 pt-4">
                 <a href="https://www.instagram.com/begonyalounge/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
                 </a>
