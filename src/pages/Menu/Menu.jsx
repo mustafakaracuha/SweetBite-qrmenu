@@ -10,7 +10,7 @@ const QrMenu = () => {
     <div className="max-w-md min-h-auto mx-auto mt-3 p-9 pb-16">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>SweetBite | Menü</title>
+        <title>Begonya Cafe & Lounge</title>
       </Helmet>
       <Header />
       <Category />

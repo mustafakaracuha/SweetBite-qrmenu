@@ -3,16 +3,16 @@ import QRCode from "react-qr-code";
 import { Helmet } from "react-helmet";
 
 function QRScanner() {
-  const [value, setValue] = useState("https://sweet-bite-qrmenu.vercel.app/menu");
+  const [value, setValue] = useState("https://begonya-cafe-lounge-qrmenu.vercel.app/menu");
 
   return (
     <div className=" max-w-md mx-auto flex flex-col items-center justify-center min-h-screen">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>SweetBite | Menu</title>
+        <title>Begonya Cafe & Lounge</title>
       </Helmet>
-      <h1 className="text-5xl font-extrabold mb-2 text-rose-500">
-      SweetBite
+      <h1 className="text-4xl font-serif font-extrabold mb-2 relative text-rose-500">
+      Begonya
       </h1>
       <h2 className="text-3xl font-bold mb-8 text-white">Hoş geldiniz</h2>
 
