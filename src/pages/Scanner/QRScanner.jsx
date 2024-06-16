@@ -11,7 +11,7 @@ function QRScanner() {
         <meta charSet="utf-8" />
         <title>Begonya Cafe & Lounge</title>
       </Helmet>
-      <h1 className="text-4xl font-serif font-extrabold mb-2 relative text-rose-500">
+      <h1 className="text-4xl font-serif font-extrabold mb-2 relative text-pink-500">
       Begonya
       </h1>
       <h2 className="text-3xl font-bold mb-8 text-white">Hoş geldiniz</h2>
