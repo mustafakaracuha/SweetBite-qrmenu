@@ -59,7 +59,7 @@ function index() {
                         </p>
                     </h2>
                     <div className={`category-content ${!categoryVisibility[category] ? "" : "collapsed"}`}>
-                        <div className="w-full h-[4px] mb-2 rounded-full bg-pink-500"></div>
+                        <div className="w-full h-[3px] mb-2 rounded-full bg-pink-500"></div>
                         <ul className="bg-transparent h-auto overflow-hidden">
                             {menuItems
                                 .filter((menuItem) => menuItem.category === category)
