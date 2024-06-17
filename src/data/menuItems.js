@@ -5,7 +5,7 @@ const menuItems = [
         category: "TATLI",
         name: "Tatlı Çeşitleri",
         price: 100,
-        description: "Lezzetli tatlılar, çikolatalı, muzlu..",
+        description: "Lezzetli tatlılar",
     },
 
 
