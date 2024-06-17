@@ -53,7 +53,7 @@ function index() {
         <>
             {categories.map((category) => (
                 <div key={category} className="mb-4">
-                    <h2 onClick={() => toggleCategoryVisibility(category)} className="text-2xl flex items-center justify-between mb-3 zIndex text-white font-bold rounded-md pl-2 cursor-pointer">
+                    <h2 onClick={() => toggleCategoryVisibility(category)} className="text-[21px] flex items-center justify-between mb-3 zIndex text-white font-bold rounded-md pl-2 cursor-pointer">
                         {category}
                         <p>{getCategoryIcon(category)}</p>
                     </h2>
