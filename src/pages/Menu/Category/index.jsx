@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import menuItems from "../../../data/menuItems";
 import ListItem from "../ListItem";
 
-import fork from "../../../fork.svg";
-import { FaSpoon } from "react-icons/fa6";
-
 import hookahIcon from "../../../assets/app/hookah.png";
 import hotDrinkIcon from "../../../assets/app/hotDrinks.png";
 import coldDrinkIcon from "../../../assets/app/coldDrinks.png";

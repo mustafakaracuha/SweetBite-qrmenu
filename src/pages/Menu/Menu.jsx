@@ -6,17 +6,17 @@ import Header from "./Header";
 import Category from "./Category";
 
 const QrMenu = () => {
-  return (
-    <div className="max-w-md min-h-auto mx-auto mt-3 p-9 pb-16">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Begonya Cafe & Lounge</title>
-      </Helmet>
-      <Header />
-      <Category />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="max-w-md min-h-auto mx-auto mt-3 p-9 pb-16">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Begonya Cafe & Lounge</title>
+            </Helmet>
+            <Header />
+            <Category />
+            <Footer />
+        </div>
+    );
 };
 
 export default QrMenu;
