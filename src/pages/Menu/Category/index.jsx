@@ -7,7 +7,6 @@ import hotDrinkIcon from "../../../assets/app/hotDrinks.png";
 import coldDrinkIcon from "../../../assets/app/coldDrinks.png";
 import dessertIcon from "../../../assets/app/dessert.png";
 import iceCreamIcon from "../../../assets/app/iceCream.png";
-import restaurantIcon from "../../../assets/app/cutlery.png";
 
 function index() {
     const [initialCategory] = useState("");
