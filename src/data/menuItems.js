@@ -292,7 +292,7 @@ const menuItems = [
         id: 41,
         category: "DONDURMA",
         name: "Extra Limon",
-        price: 105,
+        price: 15,
         description: "Ferahlık sağlayan limon aroması.",
     },
 ];

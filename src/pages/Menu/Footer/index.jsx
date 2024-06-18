@@ -1,14 +1,9 @@
 import React from "react";
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaInstagram } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 
-function index() {
-    const handleWhatsAppClick = () => {
-        const welcomeMessage = "Merhaba! Begonya Cafe & Lounge' a hoş geldiniz. Size nasıl yardımcı olabiliriz?";
-
-        const whatsappLink = `https://wa.me/905050048728?text=${encodeURIComponent(welcomeMessage)}`;
-
-        window.open(whatsappLink, "_blank");
-    };
+function Index() {
+    const phoneNumber = "+905386933667";
 
     return (
         <div>
@@ -16,12 +11,12 @@ function index() {
                 <a href="https://www.instagram.com/begonyalounge/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="text-3xl text-white mx-2 cursor-pointer" />
                 </a>
-                <a onClick={handleWhatsAppClick} rel="noopener noreferrer">
-                    <FaWhatsapp className="text-3xl text-white mx-4 cursor-pointer" />
+                <a href={`tel:${phoneNumber}`} rel="noopener noreferrer">
+                    <FiPhone className="text-[26px] text-white mx-4 cursor-pointer" />
                 </a>
             </div>
         </div>
     );
 }
 
-export default index;
+export default Index;
